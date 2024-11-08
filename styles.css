@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f5;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffcccb;
+    padding: 1rem;
+  }
+  
+  h1 {
+    color: #ff6347;
+    font-size: 2rem;
+  }
+  
+  /* Form Section */
+  #share-fail {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Fail List Section */
+  #fails {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .fail-item {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1.1rem;
+    }
+  
+    #fails, #share-fail {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 500px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    #fails, #share-fail {
+      max-width: 700px;
+    }
+  
+    .fail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+  
+    .fail-item p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+  
+    footer {
+      font-size: 1rem;
+    }
+  }
+  
